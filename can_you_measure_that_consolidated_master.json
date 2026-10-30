@@ -1,0 +1,1042 @@
+{
+  "project": {
+    "id": "can-you-measure-that",
+    "title": "Can You Measure That?",
+    "version": "1.0 consolidated",
+    "description": "Consolidated master data for Can You Measure That? Includes the approved 15-question Practice Lab, six original mastery questions, and 12 additional mastery questions."
+  },
+  "settings": {
+    "practice_points_per_first_attempt_correct": 10,
+    "retry_points": 0,
+    "confidence_affects_score": false,
+    "practice_question_count": 15,
+    "practice_max_score": 150,
+    "mastery_questions_required_per_level": 2,
+    "mastery_rule": "Both mastery questions for a level must be answered correctly.",
+    "progress_storage": "localStorage",
+    "storage_notice": "Progress is saved only in this browser on this device. It does not transfer across devices. Clearing browser data may erase it. You can reset your progress.",
+    "practice_max_points": 150,
+    "mastery_questions_per_attempt": 2,
+    "mastery_required_correct_per_attempt": 2,
+    "mastery_optional": true
+  },
+  "confidence_options": [
+    {
+      "id": "very_confident",
+      "label": "Very confident"
+    },
+    {
+      "id": "somewhat_confident",
+      "label": "Somewhat confident"
+    },
+    {
+      "id": "just_guessing",
+      "label": "Just guessing"
+    }
+  ],
+  "levels": [
+    {
+      "id": "spot_it",
+      "name": "Spot It",
+      "purpose": "Recognise vague or poorly constructed learning objectives."
+    },
+    {
+      "id": "fix_it",
+      "name": "Fix It",
+      "purpose": "Improve objectives using observable actions, conditions, and criteria."
+    },
+    {
+      "id": "prove_it",
+      "name": "Prove It",
+      "purpose": "Check whether assessments provide evidence that learners can meet the objective."
+    }
+  ],
+  "recurring_tips": [
+    {
+      "id": "workplace_reality_check",
+      "title": "Workplace Reality Check",
+      "text": "Ask yourself: Does this assessment measure what the employee actually needs to do on the job?",
+      "placement": [
+        "prove_it",
+        "objective_builder_assessment_step"
+      ],
+      "example": {
+        "context": "Fraud prevention",
+        "note": "Identifying a fraudulent transaction and blocking one are different tasks. If the employee must stop a transaction, the assessment should require them to demonstrate the correct procedure in a realistic simulation."
+      }
+    }
+  ],
+  "practice_questions": [
+    {
+      "id": "spot-1",
+      "level": 1,
+      "level_name": "Spot It",
+      "title": "The new employee",
+      "context": "Customer Service Onboarding",
+      "scenario": "A trainer writes this learning objective: “By the end of the session, employees will understand the customer complaint escalation process.” What is the main weakness?",
+      "options": {
+        "A": "The objective doesn't specify what employees must demonstrate.",
+        "B": "The objective should always contain a numerical target.",
+        "C": "The objective is too short.",
+        "D": "The objective should begin with the word “learn.”"
+      },
+      "correct_answer": "A",
+      "feedback": {
+        "A": "Correct. “Understand” describes an intended outcome, but it doesn't tell us what evidence would demonstrate that employees have achieved it. They might need to explain the process, identify complaints requiring escalation or apply the process to a scenario.",
+        "B": "Not quite. A numerical target can be useful, but it isn't mandatory for every objective. First, define the intended performance and decide what evidence would demonstrate success.",
+        "C": "Length isn't the issue. A short objective can be measurable if it specifies the intended performance clearly.",
+        "D": "“Learn” doesn't automatically make an objective better. The important question is what learners should be able to demonstrate."
+      },
+      "takeaway": "Start with the intended performance, not the wording of the objective."
+    },
+    {
+      "id": "spot-2",
+      "level": 1,
+      "level_name": "Spot It",
+      "title": "The compliance refresher",
+      "context": "Compliance Training",
+      "scenario": "A learning designer proposes four objectives for a data privacy course. Which is the most directly measurable?",
+      "options": {
+        "A": "Employees will appreciate the importance of data privacy.",
+        "B": "Employees will understand the company's data privacy policy.",
+        "C": "Employees will identify three types of confidential customer information from a set of examples.",
+        "D": "Employees will become more aware of data protection risks."
+      },
+      "correct_answer": "C",
+      "feedback": {
+        "C": "Correct. The objective specifies an observable action, the content being assessed and the conditions under which learners perform the task. The assessment must still be designed appropriately, but the intended performance is clear.",
+        "A": "“Appreciate” describes an intended attitude or disposition. If the course aims to influence attitudes, you'll need to define what evidence would reasonably demonstrate the intended outcome.",
+        "B": "“Understand” is too broad on its own. Consider what employees should be able to explain, identify or do.",
+        "D": "“Become more aware” doesn't specify what learners should demonstrate or how improvement would be assessed."
+      },
+      "takeaway": "A measurable objective specifies evidence of performance rather than an assumed internal state."
+    },
+    {
+      "id": "spot-3",
+      "level": 1,
+      "level_name": "Spot It",
+      "title": "The leadership workshop",
+      "context": "Leadership Development",
+      "scenario": "A manager attends a workshop on giving constructive feedback. Which objective provides the strongest evidence of the intended learning outcome?",
+      "options": {
+        "A": "The manager will understand constructive feedback.",
+        "B": "The manager will appreciate the value of constructive feedback.",
+        "C": "The manager will demonstrate a feedback conversation using the organisation's agreed feedback framework.",
+        "D": "The manager will know the different feedback models."
+      },
+      "correct_answer": "C",
+      "feedback": {
+        "C": "Correct. The objective identifies an observable performance that can be assessed during a simulated conversation or role-play. A suitable rubric could assess whether the manager follows the framework and demonstrates the required communication behaviours.",
+        "A": "Understanding may be important, but this wording doesn't establish what the manager can actually do.",
+        "B": "Appreciating the value of feedback doesn't demonstrate an ability to deliver it effectively.",
+        "D": "Knowing different models is a possible knowledge outcome, but it doesn't demonstrate the ability to conduct a feedback conversation."
+      },
+      "takeaway": "Assess the capability the training is intended to develop, not just the knowledge that supports it."
+    },
+    {
+      "id": "spot-4",
+      "level": 1,
+      "level_name": "Spot It",
+      "title": "The product training session",
+      "context": "Product Training",
+      "scenario": "A trainer writes: “Participants will be able to use the new booking platform.” What is the most useful next step?",
+      "options": {
+        "A": "Replace “use” with “understand.”",
+        "B": "Specify the platform tasks participants must complete and how successful performance will be assessed.",
+        "C": "Add the phrase “by the end of the session.”",
+        "D": "Require participants to memorise the platform's features."
+      },
+      "correct_answer": "B",
+      "feedback": {
+        "B": "Correct. “Use the platform” could mean many things. Participants might need to create a booking, amend a reservation or resolve a common error. Specifying the tasks and expected performance makes the objective assessable.",
+        "A": "“Understand” is generally less specific than “use.” Replacing one broad verb with another doesn't solve the problem.",
+        "C": "A deadline can clarify when performance is expected, but it doesn't tell us what successful performance looks like.",
+        "D": "Memorising features doesn't necessarily demonstrate the ability to use the platform."
+      },
+      "takeaway": "Define the actual task before choosing the assessment."
+    },
+    {
+      "id": "spot-5",
+      "level": 1,
+      "level_name": "Spot It",
+      "title": "The onboarding assessment",
+      "context": "Employee Onboarding",
+      "scenario": "An onboarding designer wants new employees to recall the four stages of an internal escalation process. Which assessment would provide the most direct evidence of unaided recall?",
+      "options": {
+        "A": "Ask employees to select the correct stages from a multiple-choice list.",
+        "B": "Ask employees to explain why escalation is important.",
+        "C": "Ask employees to list the four stages without referring to their notes.",
+        "D": "Ask employees to role-play an escalation conversation."
+      },
+      "correct_answer": "C",
+      "feedback": {
+        "C": "Correct. Asking employees to retrieve the stages without prompts directly assesses recall.",
+        "A": "Multiple-choice questions can assess recognition, although well-designed questions may also assess more complex knowledge. Here, however, the intended outcome is unaided recall.",
+        "B": "Explaining why escalation matters assesses a different outcome.",
+        "D": "A role-play may assess practical application, but it doesn't isolate recall of the four stages."
+      },
+      "takeaway": "Recognition, recall, explanation and practical performance are different things. Choose the assessment that matches the intended outcome."
+    },
+    {
+      "id": "fix-6",
+      "level": 2,
+      "level_name": "Fix It",
+      "title": "The vague complaint-handling objective",
+      "context": "Customer Service",
+      "scenario": "Original objective: “Employees will learn how to handle difficult customers.” Which revision is the strongest starting point for a practical skills assessment?",
+      "options": {
+        "A": "Employees will understand difficult customers.",
+        "B": "Employees will demonstrate the required de-escalation techniques during a simulated customer interaction, meeting the criteria in the assessment rubric.",
+        "C": "Employees will appreciate the importance of customer service.",
+        "D": "Employees will know five facts about difficult customers."
+      },
+      "correct_answer": "B",
+      "feedback": {
+        "B": "Correct. The revised objective describes an observable performance in a defined context and identifies how success will be judged. The rubric must specify the behaviours that constitute effective performance.",
+        "A": "“Understand” doesn't establish what employees should demonstrate.",
+        "C": "Appreciating customer service doesn't demonstrate the practical skill.",
+        "D": "Remembering facts about difficult customers doesn't necessarily demonstrate the ability to handle a difficult interaction."
+      },
+      "takeaway": "Practical skills usually require evidence of practical performance."
+    },
+    {
+      "id": "fix-7",
+      "level": 2,
+      "level_name": "Fix It",
+      "title": "The numerical target",
+      "context": "Compliance Training",
+      "scenario": "Original objective: “Employees will identify suspicious account activity.” A designer revises it to: “Employees will identify at least 90% of suspicious account activity.” What is the main problem with the revision?",
+      "options": {
+        "A": "Numerical targets are never appropriate.",
+        "B": "The objective needs an observable action and a meaningful assessment context; the percentage alone doesn't establish what employees must do.",
+        "C": "The objective should use “understand” instead.",
+        "D": "All compliance objectives must be assessed through role-play."
+      },
+      "correct_answer": "B",
+      "feedback": {
+        "B": "Correct. A numerical threshold doesn't compensate for an unclear assessment task. The designer should specify the examples, cases or transactions employees will examine and define how their performance will be evaluated.",
+        "A": "Numerical thresholds can be useful when they reflect the task's requirements and risks.",
+        "C": "Replacing “identify” with “understand” would make the intended performance less specific.",
+        "D": "The assessment should suit the task. Classification exercises, case reviews, simulations and other methods may be appropriate depending on the intended capability."
+      },
+      "takeaway": "A success criterion is useful only when it relates to a clearly defined performance."
+    },
+    {
+      "id": "fix-8",
+      "level": 2,
+      "level_name": "Fix It",
+      "title": "The leadership objective",
+      "context": "Leadership Development",
+      "scenario": "Original objective: “Managers will improve their coaching skills.” The training is intended to help managers diagnose performance problems and select appropriate coaching interventions. Which revision best reflects that intention?",
+      "options": {
+        "A": "Managers will understand coaching.",
+        "B": "Managers will demonstrate enthusiasm for coaching.",
+        "C": "Given three employee performance scenarios, managers will analyse the underlying performance issues and recommend an appropriate coaching intervention for each, using the stated decision criteria.",
+        "D": "Managers will attend the coaching workshop."
+      },
+      "correct_answer": "C",
+      "feedback": {
+        "C": "Correct. The objective specifies the conditions, intended cognitive work and expected output. It can be assessed using the quality of the analysis and recommendations.",
+        "A": "Understanding coaching concepts may be a prerequisite, but it doesn't establish whether managers can diagnose performance issues.",
+        "B": "Enthusiasm isn't the intended capability being assessed.",
+        "D": "Attendance is not evidence that the learning outcome has been achieved."
+      },
+      "takeaway": "Write the objective around the performance the training is intended to improve."
+    },
+    {
+      "id": "fix-9",
+      "level": 2,
+      "level_name": "Fix It",
+      "title": "The success criterion",
+      "context": "Product Training",
+      "scenario": "Objective: “Given a practice account, employees will create a booking and issue a receipt.” Which addition would make the expected performance clearer?",
+      "options": {
+        "A": "“They will understand why bookings matter.”",
+        "B": "“They will complete both tasks according to the required procedure, with no critical errors.”",
+        "C": "“They will enjoy using the platform.”",
+        "D": "“They will finish the training.”"
+      },
+      "correct_answer": "B",
+      "feedback": {
+        "B": "Correct. The criterion specifies that both tasks must be completed and identifies the importance of avoiding critical errors. The designer should define which errors are considered critical and ensure the assessment captures them.",
+        "A": "Understanding the importance of bookings doesn't establish whether employees can complete the tasks.",
+        "C": "Enjoyment may influence the experience, but it doesn't demonstrate task proficiency.",
+        "D": "Finishing training doesn't guarantee that the intended capability has been achieved."
+      },
+      "takeaway": "Define success in terms of the task's actual requirements."
+    },
+    {
+      "id": "fix-10",
+      "level": 2,
+      "level_name": "Fix It",
+      "title": "The Bloom's Taxonomy trap",
+      "context": "Learning Design",
+      "scenario": "A colleague argues: “We need an Apply-level objective, so let's use the verb ‘identify’.” What is the best response?",
+      "options": {
+        "A": "Correct. “Identify” always belongs to Apply.",
+        "B": "Incorrect. “Identify” always belongs to Remember.",
+        "C": "The verb alone doesn't establish the cognitive level. We need to examine what learners must identify, the context and the reasoning required.",
+        "D": "Bloom's Taxonomy cannot be used when writing learning objectives."
+      },
+      "correct_answer": "C",
+      "feedback": {
+        "C": "Correct. Verbs can be useful starting points, but cognitive demand depends on the task. Identifying a familiar term from a list may involve recognition. Identifying the root cause of an unfamiliar operational problem may require more complex reasoning.",
+        "A": "No verb automatically establishes Apply-level performance.",
+        "B": "“Identify” can be used in tasks involving different levels of cognitive demand.",
+        "D": "Bloom's Taxonomy can help designers clarify intended cognitive processes. It should be applied thoughtfully rather than mechanically."
+      },
+      "takeaway": "Classify the intended thinking, not just the verb."
+    },
+    {
+      "id": "prove-11",
+      "level": 3,
+      "level_name": "Prove It",
+      "title": "The de-escalation role-play",
+      "context": "Customer Service",
+      "scenario": "Objective: “Given a simulated customer interaction, employees will demonstrate the required de-escalation behaviours according to the assessment rubric.” Which assessment is best aligned?",
+      "options": {
+        "A": "A multiple-choice quiz about de-escalation terminology.",
+        "B": "A role-play assessed against the required behavioural criteria.",
+        "C": "A survey asking whether employees enjoyed the training.",
+        "D": "A written definition of de-escalation."
+      },
+      "correct_answer": "B",
+      "feedback": {
+        "B": "Correct. The assessment directly observes the intended performance in a simulated interaction.",
+        "A": "A quiz can assess knowledge of terminology and techniques, but it doesn't establish whether employees can demonstrate those behaviours.",
+        "C": "Enjoyment measures aspects of the learner experience, not the intended skill.",
+        "D": "A definition can demonstrate conceptual knowledge, but not practical performance."
+      },
+      "takeaway": "If the objective is about doing, the assessment should normally capture the doing."
+    },
+    {
+      "id": "prove-12",
+      "level": 3,
+      "level_name": "Prove It",
+      "title": "The data privacy objective",
+      "context": "Compliance Training",
+      "scenario": "Objective: “Employees will explain why customer information must be handled according to the company's privacy policy.” Which assessment is most appropriate?",
+      "options": {
+        "A": "Ask employees to explain the reasons for the policy in their own words.",
+        "B": "Ask employees to identify the company's logo.",
+        "C": "Ask employees to complete a practical data-handling simulation without assessing their explanations.",
+        "D": "Ask employees whether they liked the training."
+      },
+      "correct_answer": "A",
+      "feedback": {
+        "A": "Correct. The assessment directly asks employees to explain the rationale behind the policy. A suitable rubric could assess whether their explanations address the relevant principles and consequences.",
+        "B": "Recognising the logo doesn't demonstrate understanding of the policy's rationale.",
+        "C": "A simulation may assess practical application, but the stated objective concerns explaining why the policy exists.",
+        "D": "Satisfaction isn't evidence that the intended explanation has been learned."
+      },
+      "takeaway": "An assessment can be valuable without being aligned to the particular objective you're measuring."
+    },
+    {
+      "id": "prove-13",
+      "level": 3,
+      "level_name": "Prove It",
+      "title": "The root-cause analysis",
+      "context": "Operations Training",
+      "scenario": "Objective: “Given a case study describing a recurring service failure, employees will analyse the available evidence to identify contributing factors and explain how those factors relate to the failure.” Which assessment is best aligned?",
+      "options": {
+        "A": "Ask employees to recall the definition of root-cause analysis.",
+        "B": "Ask employees to identify the author of the case study.",
+        "C": "Ask employees to analyse the case and submit a reasoned explanation of the contributing factors.",
+        "D": "Ask employees to rate their confidence in their analytical skills."
+      },
+      "correct_answer": "C",
+      "feedback": {
+        "C": "Correct. The task requires employees to examine evidence, identify relationships and explain their reasoning. The assessment rubric should evaluate the quality of their analysis rather than simply count how many factors they list.",
+        "A": "Recalling a definition is a different learning outcome.",
+        "B": "Identifying the author is unrelated to the intended analytical skill.",
+        "D": "Self-reported confidence may be useful supplementary information, but it doesn't demonstrate analytical performance."
+      },
+      "takeaway": "Assess the reasoning process and quality of the output when the objective requires analysis."
+    },
+    {
+      "id": "prove-14",
+      "level": 3,
+      "level_name": "Prove It",
+      "title": "The coaching decision",
+      "context": "Leadership Development",
+      "scenario": "Objective: “Given two proposed coaching plans, managers will evaluate each plan against the team's stated performance needs and justify which plan is more appropriate.” Which assessment provides the strongest evidence?",
+      "options": {
+        "A": "Ask managers to define coaching.",
+        "B": "Ask managers to select their favourite plan without explanation.",
+        "C": "Ask managers to compare both plans against the stated criteria and justify their decision.",
+        "D": "Ask managers to list five coaching models."
+      },
+      "correct_answer": "C",
+      "feedback": {
+        "C": "Correct. The task captures both the evaluation and the justification specified in the objective.",
+        "A": "Defining coaching doesn't demonstrate the ability to evaluate a plan.",
+        "B": "A preference alone doesn't establish that the manager evaluated the plans against the required criteria.",
+        "D": "Recalling coaching models is a different outcome."
+      },
+      "takeaway": "When the objective requires a justified judgement, the assessment must capture the reasoning behind that judgement."
+    },
+    {
+      "id": "prove-15",
+      "level": 3,
+      "level_name": "Prove It",
+      "title": "The onboarding redesign",
+      "context": "Employee Onboarding",
+      "scenario": "Objective: “New employees will create an improved onboarding checklist that addresses the documented gaps in the existing process.” Which assessment approach is most appropriate?",
+      "options": {
+        "A": "A multiple-choice test about onboarding terminology.",
+        "B": "A review of the checklist against defined requirements, including whether it addresses the documented gaps.",
+        "C": "A survey asking whether employees found the training enjoyable.",
+        "D": "A request to recall the names of the onboarding stakeholders."
+      },
+      "correct_answer": "B",
+      "feedback": {
+        "B": "Correct. The objective requires employees to produce an improved artefact. Reviewing that artefact against defined requirements provides direct evidence of the intended outcome.",
+        "A": "Knowing terminology doesn't demonstrate the ability to create an improved checklist.",
+        "C": "Enjoyment is not evidence that the checklist meets the requirements.",
+        "D": "Recalling stakeholder names doesn't establish the ability to improve the process."
+      },
+      "takeaway": "When the objective requires learners to create something, assess the quality and suitability of what they produce."
+    }
+  ],
+  "mastery_questions": [],
+  "objective_builder": {
+    "steps": [
+      "Define the workplace task or performance need.",
+      "Draft an observable learning objective.",
+      "Select the Bloom's Taxonomy level and explain why it fits.",
+      "Choose an assessment method that measures the objective.",
+      "Set clear success criteria.",
+      "Explain how the objective and assessment align.",
+      "Complete the quality checklist and review note."
+    ],
+    "output_fields": [
+      "objective",
+      "blooms_level",
+      "blooms_level_rationale",
+      "assessment_method",
+      "success_criteria",
+      "alignment_explanation",
+      "quality_checklist",
+      "review_note"
+    ],
+    "assessment_step_tip_ids": [
+      "workplace_reality_check"
+    ]
+  },
+  "quality_checklist": [
+    "Does the objective describe an observable action?",
+    "Is the action appropriate for the intended Bloom's Taxonomy level?",
+    "Are the conditions clear where needed?",
+    "Are the success criteria specific enough to judge performance?",
+    "Does the assessment measure the thing the employee actually needs to do on the job?"
+  ],
+  "original_mastery_questions": [
+    {
+      "id": "mastery-original-1",
+      "level": 1,
+      "level_name": "Spot It",
+      "title": "Discovery questions",
+      "context": "Sales Enablement",
+      "scenario": "A trainer writes: “Sales representatives will appreciate the value of asking discovery questions.” Which revision provides the clearest observable outcome?",
+      "options": {
+        "A": "Sales representatives will understand discovery questions.",
+        "B": "Sales representatives will identify three relevant discovery questions for a given customer scenario.",
+        "C": "Sales representatives will enjoy the training.",
+        "D": "Sales representatives will attend the session."
+      },
+      "correct_answer": "B",
+      "rationale": "The objective specifies an observable action and a task context. The assessment must still be designed to establish whether the selected questions are appropriate."
+    },
+    {
+      "id": "mastery-original-2",
+      "level": 1,
+      "level_name": "Spot It",
+      "title": "Emergency evacuation recall",
+      "context": "Health and Safety Training",
+      "scenario": "A course aims to help employees recall the emergency evacuation procedure. Which assessment most directly measures unaided recall?",
+      "options": {
+        "A": "Ask employees to select the correct procedure from four options.",
+        "B": "Ask employees to list the required evacuation steps without consulting their notes.",
+        "C": "Ask employees whether they feel prepared for an emergency.",
+        "D": "Ask employees to explain why safety matters."
+      },
+      "correct_answer": "B",
+      "rationale": "The assessment requires learners to retrieve the procedure without prompts, matching the intended recall outcome.",
+      "source_note": "The pasted source had corrupted text where options B and C ran together. Option C is restored as “Ask employees whether they feel prepared for an emergency,” consistent with the supplied wording fragment."
+    },
+    {
+      "id": "mastery-original-3",
+      "level": 2,
+      "level_name": "Fix It",
+      "title": "Managing access permissions",
+      "context": "IT Onboarding",
+      "scenario": "Original objective: “Employees will learn how to manage access permissions.” Which revision best supports an assessment of practical performance?",
+      "options": {
+        "A": "Employees will understand access permissions.",
+        "B": "Employees will demonstrate how to assign and revoke permissions in a test environment, following the required procedure.",
+        "C": "Employees will appreciate the importance of access control.",
+        "D": "Employees will know the names of the access management tools."
+      },
+      "correct_answer": "B",
+      "rationale": "The revised objective specifies practical actions, a context and a procedure against which performance can be assessed."
+    },
+    {
+      "id": "mastery-original-4",
+      "level": 2,
+      "level_name": "Fix It",
+      "title": "Performance improvement plans",
+      "context": "Leadership Development",
+      "scenario": "A training designer wants managers to evaluate proposed performance improvement plans. Which objective best expresses the intended outcome?",
+      "options": {
+        "A": "Managers will understand performance improvement.",
+        "B": "Managers will attend a performance management workshop.",
+        "C": "Given two proposed improvement plans, managers will evaluate each against defined criteria and justify their recommendation.",
+        "D": "Managers will recall the names of performance management models."
+      },
+      "correct_answer": "C",
+      "rationale": "The objective specifies the evaluation task, its conditions and the expected justification."
+    },
+    {
+      "id": "mastery-original-5",
+      "level": 3,
+      "level_name": "Prove It",
+      "title": "Classifying customer complaints",
+      "context": "Customer Service Quality",
+      "scenario": "Objective: “Agents will classify customer complaints according to the organisation's escalation criteria.” Which assessment is most directly aligned?",
+      "options": {
+        "A": "Ask agents to classify a set of complaint scenarios using the stated criteria.",
+        "B": "Ask agents to define customer service.",
+        "C": "Ask agents whether they feel confident handling complaints.",
+        "D": "Ask agents to describe their favourite customer interaction."
+      },
+      "correct_answer": "A",
+      "rationale": "The assessment directly captures the classification task specified in the objective."
+    },
+    {
+      "id": "mastery-original-6",
+      "level": 3,
+      "level_name": "Prove It",
+      "title": "Process improvement",
+      "context": "Process Improvement",
+      "scenario": "Objective: “Employees will design a revised workflow that addresses the documented causes of processing delays.” Which assessment provides the strongest evidence?",
+      "options": {
+        "A": "A multiple-choice quiz on workflow terminology.",
+        "B": "A review of the revised workflow against the documented causes and defined design requirements.",
+        "C": "A survey about the training experience.",
+        "D": "A recall test about the history of the process."
+      },
+      "correct_answer": "B",
+      "rationale": "The objective requires learners to create a solution. Evaluating the resulting workflow against the stated requirements provides direct evidence of that capability."
+    }
+  ],
+  "additional_mastery_questions": [
+    {
+      "id": "mastery_spot_it_01",
+      "level_id": "spot_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "The Customer Service Workshop",
+      "scenario": "A learning designer is preparing a workshop for customer service employees who handle angry customers.",
+      "prompt": "Which objective gives the clearest indication of what employees should be able to do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Understand how to handle an angry customer.",
+          "is_correct": false,
+          "feedback": "“Understand” describes an internal state and does not specify an observable performance."
+        },
+        {
+          "id": "b",
+          "text": "Use the de-escalation steps to respond to an angry customer in a simulated chat.",
+          "is_correct": true,
+          "feedback": "Correct. “Use” describes an observable action, and the simulated chat provides a context for demonstrating it."
+        },
+        {
+          "id": "c",
+          "text": "Learn about different types of angry customers.",
+          "is_correct": false,
+          "feedback": "This describes exposure to content, not what employees will be able to do afterward."
+        },
+        {
+          "id": "d",
+          "text": "Feel more comfortable handling difficult conversations.",
+          "is_correct": false,
+          "feedback": "Comfort may be useful to explore, but it does not specify the performance employees must demonstrate."
+        }
+      ],
+      "correct_answer_id": "b",
+      "rationale": "A measurable objective names an observable action and, where useful, the conditions in which the learner will demonstrate it.",
+      "takeaway": "Ask what someone would actually see or hear the learner do."
+    },
+    {
+      "id": "mastery_spot_it_02",
+      "level_id": "spot_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "The Product Knowledge Course",
+      "scenario": "After a product course, employees are expected to know the five main features of a new service.",
+      "prompt": "Which objective makes that expectation easiest to assess?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Understand the new service.",
+          "is_correct": false,
+          "feedback": "The objective is too broad to show what employees should demonstrate."
+        },
+        {
+          "id": "b",
+          "text": "Become familiar with the five main features.",
+          "is_correct": false,
+          "feedback": "“Become familiar with” does not define observable evidence of learning."
+        },
+        {
+          "id": "c",
+          "text": "List the five main features of the service when prompted.",
+          "is_correct": true,
+          "feedback": "Correct. Listing the features is observable and can be checked against the expected list."
+        },
+        {
+          "id": "d",
+          "text": "Appreciate why the service is useful to customers.",
+          "is_correct": false,
+          "feedback": "This may be valuable, but it does not assess whether employees can identify the five features."
+        }
+      ],
+      "correct_answer_id": "c",
+      "rationale": "The objective should state the performance that provides evidence for the intended outcome.",
+      "takeaway": "Replace vague learning states with an action that can be observed or checked."
+    },
+    {
+      "id": "mastery_spot_it_03",
+      "level_id": "spot_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "The Data Security Course",
+      "scenario": "A team needs to identify suspicious phishing emails and report them using the company’s reporting process.",
+      "prompt": "What is the main weakness in the objective “Identify phishing emails”?",
+      "options": [
+        {
+          "id": "a",
+          "text": "“Identify” is never a measurable action.",
+          "is_correct": false,
+          "feedback": "Identifying can be observable when the learner must select or flag examples."
+        },
+        {
+          "id": "b",
+          "text": "It covers recognition but leaves out the required reporting action.",
+          "is_correct": true,
+          "feedback": "Correct. The objective does not include the reporting behaviour employees must perform on the job."
+        },
+        {
+          "id": "c",
+          "text": "It needs a numerical target in every case.",
+          "is_correct": false,
+          "feedback": "A numerical target is not automatically necessary. Criteria should suit the task and risk."
+        },
+        {
+          "id": "d",
+          "text": "It should focus on how phishing works rather than employee actions.",
+          "is_correct": false,
+          "feedback": "Background knowledge may help, but the stated workplace expectation includes identifying and reporting suspicious emails."
+        }
+      ],
+      "correct_answer_id": "b",
+      "rationale": "An objective should cover the performance employees are expected to carry out, not just one part of the workflow.",
+      "takeaway": "Check that the objective includes all essential job actions."
+    },
+    {
+      "id": "mastery_spot_it_04",
+      "level_id": "spot_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "The Quality Assurance Course",
+      "scenario": "A course description says that employees will “improve their QA skills.”",
+      "prompt": "Why is this a weak learning objective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "“Improve” does not specify the action or evidence that will show success.",
+          "is_correct": true,
+          "feedback": "Correct. The statement does not say what employees should do or how the improvement could be observed."
+        },
+        {
+          "id": "b",
+          "text": "Every objective must use a verb from Bloom’s Taxonomy.",
+          "is_correct": false,
+          "feedback": "A verb alone does not make an objective effective. The intended cognitive demand and observable performance also matter."
+        },
+        {
+          "id": "c",
+          "text": "QA skills cannot be assessed.",
+          "is_correct": false,
+          "feedback": "QA performance can be assessed using suitable examples, criteria and workplace tasks."
+        },
+        {
+          "id": "d",
+          "text": "The objective is too specific.",
+          "is_correct": false,
+          "feedback": "The problem is that it is too vague, not too specific."
+        }
+      ],
+      "correct_answer_id": "a",
+      "rationale": "Words such as “improve” need to be replaced or supported by a description of the performance expected.",
+      "takeaway": "A useful objective makes the expected performance clear enough to assess."
+    },
+    {
+      "id": "mastery_fix_it_01",
+      "level_id": "fix_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "Handling Refund Requests",
+      "scenario": "Employees need to make consistent decisions about whether customer refund requests meet policy requirements.",
+      "prompt": "Which objective best describes the expected performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Understand the refund policy and why it matters.",
+          "is_correct": false,
+          "feedback": "This does not specify the decision employees must make."
+        },
+        {
+          "id": "b",
+          "text": "Review refund requests and determine eligibility using the refund policy.",
+          "is_correct": true,
+          "feedback": "Correct. It identifies the task and the policy employees must use to make the decision."
+        },
+        {
+          "id": "c",
+          "text": "Know how to give customers refunds.",
+          "is_correct": false,
+          "feedback": "“Know how” is vague and does not clarify whether employees must assess eligibility, process a refund, or explain a decision."
+        },
+        {
+          "id": "d",
+          "text": "Become more confident when discussing refunds.",
+          "is_correct": false,
+          "feedback": "Confidence does not establish whether employees can make policy-aligned eligibility decisions."
+        }
+      ],
+      "correct_answer_id": "b",
+      "rationale": "A stronger objective identifies the observable decision and the reference standard used to make it.",
+      "takeaway": "Include the action and the relevant policy, tool or condition when it shapes performance."
+    },
+    {
+      "id": "mastery_fix_it_02",
+      "level_id": "fix_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "Emergency Evacuation",
+      "scenario": "Employees must follow the correct evacuation procedure when an emergency alarm sounds.",
+      "prompt": "Which objective is the strongest fit for this workplace expectation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Understand the importance of emergency evacuation.",
+          "is_correct": false,
+          "feedback": "Understanding the importance of evacuation does not demonstrate that an employee can follow the procedure."
+        },
+        {
+          "id": "b",
+          "text": "Know the evacuation routes and safety rules.",
+          "is_correct": false,
+          "feedback": "Knowing the information is not the same as following the procedure when required."
+        },
+        {
+          "id": "c",
+          "text": "Follow the designated evacuation route and assembly procedure during a drill.",
+          "is_correct": true,
+          "feedback": "Correct. It states the observable performance and the context in which it will be demonstrated."
+        },
+        {
+          "id": "d",
+          "text": "Feel prepared to respond to an emergency.",
+          "is_correct": false,
+          "feedback": "Self-reported preparedness can inform reflection, but it does not show whether the employee can follow the procedure."
+        }
+      ],
+      "correct_answer_id": "c",
+      "rationale": "For a procedural task, the objective should describe the behaviour employees must demonstrate under realistic conditions.",
+      "takeaway": "Write the objective around the action required, not just awareness of the topic."
+    },
+    {
+      "id": "mastery_fix_it_03",
+      "level_id": "fix_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "Investigating Customer Complaints",
+      "scenario": "A support team needs to investigate recurring complaints, identify likely causes and recommend appropriate resolutions.",
+      "prompt": "Which objective best captures the required performance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Understand common customer complaints.",
+          "is_correct": false,
+          "feedback": "This focuses on understanding the topic rather than investigating and responding to a complaint."
+        },
+        {
+          "id": "b",
+          "text": "Learn about root-cause analysis.",
+          "is_correct": false,
+          "feedback": "Learning about a method does not demonstrate that employees can apply it."
+        },
+        {
+          "id": "c",
+          "text": "Review complaints, identify likely root causes and recommend resolutions using the team’s guidelines.",
+          "is_correct": true,
+          "feedback": "Correct. The objective includes the key actions and the guidance that should inform the recommendation."
+        },
+        {
+          "id": "d",
+          "text": "Improve customer satisfaction.",
+          "is_correct": false,
+          "feedback": "Customer satisfaction may be a broader business outcome, but this statement does not specify the employee performance to develop or assess."
+        }
+      ],
+      "correct_answer_id": "c",
+      "rationale": "An objective can include multiple actions when they form part of the performance the employee needs to demonstrate.",
+      "takeaway": "Include the key steps in the work without turning the objective into a long task manual."
+    },
+    {
+      "id": "mastery_fix_it_04",
+      "level_id": "fix_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "Coaching Team Members",
+      "scenario": "Team leaders need to coach employees when performance falls below expectations and agree on a useful next step.",
+      "prompt": "Which objective is the best choice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Understand the benefits of coaching.",
+          "is_correct": false,
+          "feedback": "This covers knowledge about coaching but not the ability to conduct a coaching conversation."
+        },
+        {
+          "id": "b",
+          "text": "Become a better coach.",
+          "is_correct": false,
+          "feedback": "“Better” does not define the behaviours a team leader should demonstrate."
+        },
+        {
+          "id": "c",
+          "text": "Conduct a coaching conversation, ask questions to identify the cause of a performance gap, and agree on a next step with the employee.",
+          "is_correct": true,
+          "feedback": "Correct. It describes observable behaviours and the intended outcome of the conversation."
+        },
+        {
+          "id": "d",
+          "text": "Make employees improve their performance.",
+          "is_correct": false,
+          "feedback": "This focuses on an outcome that a leader cannot guarantee and leaves the leader’s own expected behaviours unclear."
+        }
+      ],
+      "correct_answer_id": "c",
+      "rationale": "Strong objectives describe the learner’s actions rather than relying only on broad outcomes or qualities.",
+      "takeaway": "State the behaviours the learner can demonstrate; avoid promising outcomes outside their control."
+    },
+    {
+      "id": "mastery_prove_it_01",
+      "level_id": "prove_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "Preventing Fraudulent Transactions",
+      "scenario": "Employees must review transactions, recognise fraud indicators and take the correct action to prevent suspicious transactions from being processed.",
+      "prompt": "Which assessment provides the strongest evidence that employees can perform the required task?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask employees to define fraud and list common warning signs.",
+          "is_correct": false,
+          "feedback": "This checks related knowledge but does not show whether employees can respond correctly to a suspicious transaction."
+        },
+        {
+          "id": "b",
+          "text": "Ask employees how confident they feel about spotting fraud.",
+          "is_correct": false,
+          "feedback": "Confidence is useful reflection data, but it does not demonstrate task performance."
+        },
+        {
+          "id": "c",
+          "text": "Give employees sample transactions to review, ask them to flag those matching fraud indicators, and explain their decisions.",
+          "is_correct": true,
+          "feedback": "Correct. This assesses recognition and judgement using examples. If the job also requires blocking transactions, the assessment must include that action too."
+        },
+        {
+          "id": "d",
+          "text": "Ask employees to watch a demonstration of the fraud process.",
+          "is_correct": false,
+          "feedback": "Watching a demonstration does not establish that employees can perform the process themselves."
+        }
+      ],
+      "correct_answer_id": "c",
+      "rationale": "The assessment must match the objective. If the objective includes preventing a transaction, recognition alone is insufficient and a realistic simulation should require the correct intervention.",
+      "takeaway": "Ask whether it measures the thing the employee actually needs to do on the job.",
+      "tip_ids": [
+        "workplace_reality_check"
+      ]
+    },
+    {
+      "id": "mastery_prove_it_02",
+      "level_id": "prove_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "Assigning System Permissions",
+      "scenario": "Employees must assign and revoke system permissions in line with access requirements.",
+      "prompt": "Which assessment best matches this objective?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask employees to define role-based access.",
+          "is_correct": false,
+          "feedback": "This checks terminology but not whether employees can change permissions correctly."
+        },
+        {
+          "id": "b",
+          "text": "Have employees demonstrate assigning and revoking permissions in a test environment using the required access rules.",
+          "is_correct": true,
+          "feedback": "Correct. The learner performs the relevant task in a safe environment where the steps and outcome can be checked."
+        },
+        {
+          "id": "c",
+          "text": "Ask employees whether they have used a permissions system before.",
+          "is_correct": false,
+          "feedback": "Prior experience does not prove they can complete the required process correctly."
+        },
+        {
+          "id": "d",
+          "text": "Ask employees to read the access policy and summarise it.",
+          "is_correct": false,
+          "feedback": "Summarising the policy may test understanding, but it does not demonstrate correct system operation."
+        }
+      ],
+      "correct_answer_id": "b",
+      "rationale": "When the objective is to carry out a system task, the assessment should require the learner to perform that task.",
+      "takeaway": "Choose an assessment that lets the learner demonstrate the actual procedure."
+    },
+    {
+      "id": "mastery_prove_it_03",
+      "level_id": "prove_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "Writing Performance Improvement Plans",
+      "scenario": "Managers must write performance improvement plans that meet organisational requirements and give employees clear, actionable expectations.",
+      "prompt": "Which assessment provides the most useful evidence of the manager’s ability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask managers to list the sections of a performance improvement plan.",
+          "is_correct": false,
+          "feedback": "Remembering the sections does not show whether a plan is well constructed."
+        },
+        {
+          "id": "b",
+          "text": "Ask managers whether they feel confident writing plans.",
+          "is_correct": false,
+          "feedback": "Self-reported confidence does not show whether the plan meets the requirements."
+        },
+        {
+          "id": "c",
+          "text": "Have managers review sample plans against defined criteria and justify whether each plan meets the requirements.",
+          "is_correct": true,
+          "feedback": "Correct. This requires managers to apply the criteria and explain their judgement. If they must also write plans, include a plan-writing task as well."
+        },
+        {
+          "id": "d",
+          "text": "Ask managers to attend a presentation about performance management.",
+          "is_correct": false,
+          "feedback": "Attendance does not demonstrate the ability to evaluate or produce a suitable plan."
+        }
+      ],
+      "correct_answer_id": "c",
+      "rationale": "Assessment should align with the specific objective. Evaluating sample plans is suitable for an evaluation objective; a writing objective requires learners to produce a plan.",
+      "takeaway": "Check that the assessment matches the exact action named in the objective."
+    },
+    {
+      "id": "mastery_prove_it_04",
+      "level_id": "prove_it",
+      "type": "multiple_choice",
+      "status": "additional_mastery_question",
+      "title": "Improving a Workflow",
+      "scenario": "Employees are learning to evaluate proposed workflow changes against identified problems and operational requirements.",
+      "prompt": "Which assessment best measures that ability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ask employees to define workflow improvement.",
+          "is_correct": false,
+          "feedback": "Defining the term does not show whether employees can evaluate a proposed change."
+        },
+        {
+          "id": "b",
+          "text": "Ask employees to rate how much they like the proposed workflow.",
+          "is_correct": false,
+          "feedback": "Preference alone does not establish whether the workflow addresses the identified problems or meets requirements."
+        },
+        {
+          "id": "c",
+          "text": "Give employees a proposed workflow and the relevant problems and requirements; ask them to identify gaps and explain their judgement.",
+          "is_correct": true,
+          "feedback": "Correct. The task requires learners to apply the criteria, identify shortcomings and justify their evaluation."
+        },
+        {
+          "id": "d",
+          "text": "Ask employees to memorise the steps in the current workflow.",
+          "is_correct": false,
+          "feedback": "Memorising current steps does not demonstrate the ability to evaluate a proposed change."
+        }
+      ],
+      "correct_answer_id": "c",
+      "rationale": "An assessment should elicit the same kind of thinking the objective describes. Evaluating a proposal requires judgement against criteria.",
+      "takeaway": "Match the assessment to the cognitive work the objective requires."
+    }
+  ],
+  "mastery_rules": {
+    "questions_per_level_in_bank": 6,
+    "questions_presented_per_attempt": 2,
+    "required_correct_per_attempt": 2,
+    "question_selection": "Draw two questions from the level; avoid repeats within one attempt and prefer unseen questions on subsequent attempts.",
+    "retry_policy": "Mastery is optional and is not required to unlock the next level.",
+    "label": "Practice Mastery Achieved",
+    "caveat": "This is a learning-game mastery indicator, not a claim of professional proficiency."
+  },
+  "progression_rules": {
+    "starting_level": 1,
+    "unlock_next_level": "Complete all five Practice Lab challenges in the current level.",
+    "replay": "Completed levels and challenges may be replayed freely. Replays do not overwrite original first-attempt results or award points again.",
+    "completion": "A challenge counts as completed after the learner finishes it, even if the first answer was incorrect.",
+    "first_attempt_accuracy": "Record the original answer, not the eventual retry.",
+    "confidence_options": [
+      "Very confident",
+      "Somewhat confident",
+      "Just guessing"
+    ],
+    "confidence_affects_score": false
+  },
+  "dashboard": [
+    "Practice points",
+    "Challenges completed",
+    "First-attempt accuracy",
+    "Confidence summary",
+    "Mastery status per level",
+    "Topics to revisit",
+    "Continue/reset"
+  ],
+  "privacy": {
+    "storage": "Browser localStorage only; no account or server storage.",
+    "notice": "Progress stays on this device/browser and will not transfer across devices. Clearing browser data may erase it. The learner can reset progress. Answers, score and confidence are not sent to a server."
+  },
+  "workplace_reality_check": {
+    "tip": "Ask whether it measures the thing the employee actually needs to do on the job.",
+    "include_in": [
+      "Level 3 — Prove It",
+      "Objective Builder"
+    ],
+    "example": "Identifying a fraudulent transaction differs from blocking it. If the job requires stopping it, the assessment should make learners demonstrate the correct procedure in a realistic simulation."
+  },
+  "source_notes": {
+    "original_practice_lab": "Transcribed from the user-confirmed Practice Lab Question Bank Version 1.0 in this conversation.",
+    "original_mastery_bank": "Transcribed from the user-provided Part 2: Mastery Assessments. Mastery Question 2 option wording was restored where the pasted text had a clear formatting corruption.",
+    "additional_mastery_bank": "Includes the 12 additional mastery questions previously drafted for this project.",
+    "rule_reconciliation": "The original document described mastery as at least 80% on a separate assessment. The later agreed implementation is 2/2 correct on the two questions presented in a mastery attempt, with six questions in each level's bank. This file follows the later implementation rule."
+  }
+}
